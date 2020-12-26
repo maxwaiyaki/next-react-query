@@ -1,0 +1,62 @@
+.img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.container {  
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.aspectRatio {
+  width: 100%;
+  object-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.aspectRatio::before {
+  height: 0;
+  content: "";
+  display: block;
+  padding-bottom: 66.66666666666666%;
+}
+
+@media screen and (min-width: 30em) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+
+
+
+
